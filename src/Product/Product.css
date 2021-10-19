@@ -1,0 +1,285 @@
+.pcontainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+
+}
+.pimage{
+    background: sandybrown;
+    height: 65vh;
+    width: 50%;
+    
+}
+.imgtags{
+    height: 20vh;
+    width: 100%;
+    background: rgb(96, 244, 212);
+}
+.pdetails{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    padding: 20px;
+    background: rgb(96, 244, 212);
+    height: 55vh;
+    width: 100%;
+}
+.stiky{
+height:100%;
+  width:50%;
+  float:left;
+  position:sticky;
+}
+
+.pname{
+    font-size: 4em;
+    float: left;
+}
+.by{
+    font-size: 1.5em;
+}
+.RR{
+    font-size: 1.5em;
+}
+.price{
+    font-size: 4em;
+}
+.offer{
+    display: flex;
+    margin-top: 20px;
+    font-size: 2.1em;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.offer1{
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 2px;
+}
+
+.pdis{
+    font-size: 3em;
+}
+
+
+.about{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    top: 20vh;
+}
+.about-title{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    position: fixed;
+}
+.pre{
+    height: 70vh;
+    width: 100%;
+    width: auto;
+    
+}
+
+.buy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.about-pages{
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
+.b{
+    font-size: 0.7em;
+    background: orangered;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0px 0px 5px 1px;
+    width: 160px;
+    cursor: pointer;
+
+}
+
+/* .about-pages div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.about-pages div> p{
+    width: 80%;
+    display: flex;
+    font-size: 18px;
+    line-height: 30px;
+} */
+
+
+/**preview bar**/
+.previews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 20%;
+    background: rgb(245, 219, 219);
+}
+.preimg{
+    border: 1px solid #00000038;
+    box-shadow: 0px 0px 1px 0px;
+    margin: 5px;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+
+}
+.sliderR{
+    position: absolute;
+    height: 70vh;
+    width: 3vw;
+    right: 23px;
+    background: #00000002;
+    font-size: 3rem;
+    border: none;
+    color: #282412e8;
+    cursor: pointer;
+
+}
+.sliderL{
+    position: absolute;
+    height: 70vh;
+    width: 3vw;
+    left: 183px;
+    background: #00000002;
+    font-size: 3rem;
+    border: none;
+    color: #282412e8;
+    cursor: pointer;
+
+}
+
+.sliderup{
+    position: absolute;
+    top: 0px;
+    height: 6vh;
+    width: 10vw;
+    background: #00000014;
+    font-size: 3rem;
+    border: none;
+    color: #000000b9;
+    cursor: pointer;
+
+}
+.sliderdown{
+    position: absolute;
+    height: 6vh;
+    width: 10vw;
+    top:64vh;
+    background: #00000014;
+    font-size: 3rem;
+    border: none;
+    color: #000000b9;
+    cursor: pointer;
+
+}
+
+/*Varients*/
+.pcolor{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: lightcoral;
+    width: 100%;
+    height: 25vh;
+}
+.pvarient{
+font-size: 2em;
+float: left;
+}
+.varients{
+    display: flex;
+
+}
+
+/*Availibity*/
+.pavail{
+    background: mediumturquoise;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2em;
+    width: 100%;
+    height: 20vh;
+    padding: 20px;
+}
+.pinput{
+    margin: 10px;
+}
+.pin{
+    width: 15vw;
+    height: 5vh;
+}
+.psub{
+    background: rgb(67, 67, 241);
+    color: white;
+    width: 8vw;
+    height: 5vh;
+}
+input{
+    padding: 2px;
+}
+.dis{
+    padding: 20px;
+    background: rgb(255, 176, 176);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail{
+    padding: 10px;
+    font-size: 2em;
+    height: 50vh;
+    width: 90%;
+}
+
+td{
+    font-size: 0.7em;
+}
+th{
+    border-right:0.5px solid black;
+}
+
+
+/*Rating*/
+.rating{
+    background: rgba(236, 73, 73, 0.575);
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;padding: 20px;
+    font-size: 2.5em;
+    overflow-y: scroll;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: burlywood;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+
+}

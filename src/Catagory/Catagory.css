@@ -1,0 +1,45 @@
+.card{
+    position: relative;
+    top: 18vh;
+    background: #81c5be;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 320px;
+    width: 100%;
+    border: 0.1px solid #81c5be;
+    border-radius: 12px;
+    margin: 5px;
+    box-shadow: 0px 0px 4px 1px;
+}
+.Cknow{
+    border: 1px solid #4bfbea;
+    background: #4bfbea;
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 6px;
+    padding: 5px 30px;
+    cursor: pointer;
+
+}
+.k{
+    position: relative;
+    clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+    background: violet;
+}
+
+
+.grid{
+    position: relative;
+    bottom: 100px;
+    display: grid;
+    margin: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr)) ;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center center;
+    grid-gap: 10px;
+    padding: 20px;
+}
