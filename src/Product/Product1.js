@@ -1,6 +1,23 @@
-import React from "react";
+import React , { useState } from "react";
 import './Product.css';
-const Product1=()=>{
+import p1 from './p1.webp';
+import {ProductData} from './ProductData.js';
+
+const Product1=({slides})=>{
+
+    const [current, setCurrent] = useState(0);
+    let length = slides.length;
+    const nextSlide = () => {
+      setCurrent(current === length - 1 ? 0 : current + 1);
+    };
+    const prevSlide = () => {
+      setCurrent(current === 0 ? length - 1 : current - 1);
+    };
+  
+    if (!Array.isArray(slides) || slides.length <= 0) {
+      return null;
+    }
+    
     return(
 // <div className='pcontainer'>
      // <div className='pimage sticky'>
@@ -48,10 +65,10 @@ const Product1=()=>{
 <section className='about'>
     <div className='about-title'>
         <div className='previews'>
-        <img className='preimg' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
-        <img className='preimg' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
-        <img className='preimg' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
-        <img className='preimg' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
+        <img className='preimg' alt='product' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
+        <img className='preimg' alt='product' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
+        <img className='preimg' alt='product' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
+        <img className='preimg' alt='product' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
         <button class="sliderup" onClick=''>&uarr;</button>
         <button class="sliderdown"  onClick=''>&darr;</button>
      
@@ -61,9 +78,21 @@ const Product1=()=>{
 
 
     <div className='pbuy'>
-    <img className='pre' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
-    <button class="sliderL" onClick=''>&#10094;</button>
-        <button class="sliderR"  onClick=''>&#10095;</button>
+    {/* <img className='pre' alt='product' src={p1}/> */}
+    {ProductData.map((slide, index) => {
+        return (
+          <div
+            className={index === current ? 'slide active' : 'slide'}
+            key={index}
+          >
+            {index === current && (
+              <img src={slide.image} alt='travel' className='pre' />
+            )}
+          </div>
+        );
+      })}
+    <button class="sliderL" onClick={prevSlide}>&#10094;</button>
+    <button class="sliderR"  onClick={nextSlide}>&#10095;</button>
      
     <div className='buy'>
     <div className='b'>Add to cart</div>
@@ -92,15 +121,15 @@ const Product1=()=>{
              <div className='pvarient'>Varients</div>
              <div className='varients'>
             <div className=''>
-             <img className='preimg' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
+             <img className='preimg' alt='product' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
              <div className=''>Blue</div>
              </div>
              <div className=''>
-             <img className='preimg' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
+             <img className='preimg' alt='product' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
              <div className=''>Black</div>
              </div>
              <div className=''>
-             <img className='preimg' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
+             <img className='preimg' alt='product' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
              <div className=''>red</div>
              </div>           
              </div>
@@ -163,7 +192,7 @@ const Product1=()=>{
         </div>
 
         
-         <div className='pdis'>Similar Product Section</div>
+         <div className='pdis sim'>Similar Product Section</div>
 
         
     

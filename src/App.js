@@ -26,6 +26,7 @@ import './App.css';
 import Navigation2 from './Navigation2/Navigation.js';
 import Cover from './Cover/Cover.js';
 import { CoverData } from './Cover/CoverData';
+import { ProductData } from './Product/ProductData';
 import CatagoryList from './Catagory/CatagoryList';
 import FooterSection from './Footer/Footer.js';
 import Product1 from './Product/Product1.js';
@@ -56,7 +57,7 @@ class App extends React.Component {
               :(
                  this.state.route ==='catagory-product'
                  ?<ProductPage  onRouteChange={this.onRouteChange}/>
-                 :(<Product1/>)
+                 :(<Product1 slides={ProductData}/>)
                 )
             }
 

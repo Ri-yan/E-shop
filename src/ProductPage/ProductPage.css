@@ -1,25 +1,28 @@
 .ppage{
     position: relative;
-    top:15vh;
-    background: cornflowerblue;
+    top:14vh;
+    background: #c3b5a6;
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(500px, 2fr)) ;
     grid-template-rows: 50vh 50vh;
+    grid-template-rows: repeat(auto-fit,minmax(300px, 1fr)) ;
     place-items: center center;
     grid-gap: 10px;
     padding: 20px;
+    justify-content: center;
 }
 .product{
-    height: 50vh;
+    height: -webkit-fill-available;
     width: 100%;
-    background: cyan;
+    background: lightgrey;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0px 0px 5px 0px;
-
+    border-radius: 10px;
 }
 .product img{
     background-size:contain;
@@ -27,6 +30,8 @@
     width: 20vw;
     margin:10px ;
     box-shadow: 0px 0px 8px 0px;
+
+    border-radius: 10px;
 
 }
 .pd{
@@ -36,7 +41,7 @@
     align-items: flex-start;
 }
 .name{
-    font-size: 3em;
+    font-size: 2.8em;
 }
 .know{
     margin-top: 10vh;
@@ -45,5 +50,26 @@
     border: none;
     box-shadow: 0px 0px 5px 0px;
     cursor: pointer;
+    border-radius: 8px;
 
+}
+@media only screen and (max-width: 768px){
+    .product{
+        flex-direction: column;
+        width: 65%;
+    }
+    .product img{
+        width: 90%;
+        height: 35vh;
+    }
+    .know{
+        margin-top: 3vh;
+        font-size: 2em;
+    }
+    .name {
+        font-size: 2.3em;
+    }
+    .price {
+        font-size: 3em;
+    }
 }

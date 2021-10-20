@@ -6,7 +6,7 @@ const ProductPage=({onRouteChange})=>{
     <div className="ppage">
 
         <div className="product">
-            <img className='' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
+            <img className='' alt='product' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
             <div className="pd">
                 <div className="name">Abc's The Ordinary Pen</div>
                 <div className="RR">&#9733;&#9733;&#9733;(20056)</div>
@@ -15,7 +15,7 @@ const ProductPage=({onRouteChange})=>{
             </div>
         </div>
         <div className="product">
-            <img className='' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
+            <img className='' alt='product' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
             <div className="pd">
                 <div className="name">Abc's The Ordinary Pen</div>
                 <div className="RR">&#9733;&#9733;&#9733;(20056)</div>
@@ -24,7 +24,7 @@ const ProductPage=({onRouteChange})=>{
             </div>
         </div>
         <div className="product">
-            <img className='' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
+            <img className='' alt='product' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
             <div className="pd">
                 <div className="name">Abc's The Ordinary Pen</div>
                 <div className="RR">&#9733;&#9733;&#9733;(20056)</div>
@@ -33,7 +33,7 @@ const ProductPage=({onRouteChange})=>{
             </div>
         </div>
         <div className="product">
-            <img className='' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
+            <img className='' alt='product' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
             <div className="pd">
                 <div className="name">Abc's The Ordinary Pen</div>
                 <div className="RR">&#9733;&#9733;&#9733;(20056)</div>
@@ -42,7 +42,7 @@ const ProductPage=({onRouteChange})=>{
             </div>
         </div>
         <div className="product">
-            <img className='' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
+            <img className='' alt='product' src='https://www.montblanc.com/variants/images/34480784411791124/A/w570.jpg'/>
             <div className="pd">
                 <div className="name">Abc's The Ordinary Pen</div>
                 <div className="RR">&#9733;&#9733;&#9733;(20056)</div>

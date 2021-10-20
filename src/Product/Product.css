@@ -24,6 +24,8 @@
     background: rgb(96, 244, 212);
     height: 55vh;
     width: 100%;
+    border-bottom: 3px solid #706d6d4f;
+    background: #f1e8db;
 }
 .stiky{
 height:100%;
@@ -130,6 +132,7 @@ height:100%;
     height: 70vh;
     width: 20%;
     background: rgb(245, 219, 219);
+    margin-bottom: 20px;
 }
 .preimg{
     border: 1px solid #00000038;
@@ -143,6 +146,7 @@ height:100%;
 .sliderR{
     position: absolute;
     height: 70vh;
+    top: 0px;
     width: 3vw;
     right: 23px;
     background: #00000002;
@@ -154,10 +158,11 @@ height:100%;
 }
 .sliderL{
     position: absolute;
+    top: 0px;
     height: 70vh;
     width: 3vw;
     left: 183px;
-    background: #00000002;
+    background: #02010102;
     font-size: 3rem;
     border: none;
     color: #282412e8;
@@ -199,10 +204,12 @@ height:100%;
     background: lightcoral;
     width: 100%;
     height: 25vh;
-}
+    border-bottom: 3px solid #706d6d4f;
+    background: #f1e8db;}
 .pvarient{
 font-size: 2em;
 float: left;
+
 }
 .varients{
     display: flex;
@@ -219,6 +226,8 @@ float: left;
     width: 100%;
     height: 20vh;
     padding: 20px;
+    border-bottom: 3px solid #706d6d4f;
+    background: #f1e8db;
 }
 .pinput{
     margin: 10px;
@@ -243,6 +252,9 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 3px solid #706d6d4f;
+    background: #f1e8db;
+    
 }
 
 .detail{
@@ -270,7 +282,12 @@ th{
     align-items: flex-start;padding: 20px;
     font-size: 2.5em;
     overflow-y: scroll;
+    border-bottom: 3px solid #706d6d4f;
+    background: #f1e8db;
 }
+.rating::-webkit-scrollbar {
+    display: none;
+  }
 .review{
     display: flex;
     flex-direction: column;
@@ -282,4 +299,110 @@ th{
     font-size: 2rem;
     cursor: pointer;
 
+}
+.sim{
+    height: 100vh;
+}
+@media only screen and (max-width: 768px){
+.about-title{
+    flex-direction: column;
+    position: relative;
+    width: -webkit-fill-available;
+}
+.previews{
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    width: 71vh;
+    background: rgb(245, 219, 219);
+    justify-content: center;
+    align-items: center;
+    width: -webkit-fill-available;
+
+}
+.sliderup {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 12.5vh;
+    width: 5vw;
+    background: #00000014;
+    font-size: 3rem;
+    border: none;
+    color: #000000b9;
+    cursor: pointer;
+}
+.sliderdown {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 12.5vh;
+    width: 5vw;
+    background: #00000014;
+    font-size: 3rem;
+    border: none;
+    color: #000000b9;
+    cursor: pointer;
+}
+.sliderL {
+    position: absolute;
+    height: 70vh;
+    top: 130px;
+    width: 6vw;
+    left: 0px;
+    background: #00000002;
+    font-size: 3rem;
+    border: none;
+    color: #282412e8;
+    cursor: pointer;
+}
+.sliderR {
+    position: absolute;
+    height: 70vh;
+    top: 130px;
+    width: 6vw;
+    right: 0px;
+    background: #00000002;
+    font-size: 3rem;
+    border: none;
+    color: #282412e8;
+    cursor: pointer;
+}
+.about{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    width: 117vw;
+}
+.about-pages{
+    position: unset;
+    width: -webkit-fill-available;
+}
+.pre{
+    height: 100%;
+    width: 90%;
+}
+.pbuy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.psub{
+    width: 30vw;
+}
+.pin{
+    width: 40vw;
+}
+.b{
+    margin: 30px;
+}
+.pdetails{
+    width: -webkit-fill-available;
+}
+.product{
+    width: 65%;
+}
+.product img{
+    width: 90%;
+}
 }

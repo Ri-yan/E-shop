@@ -9,7 +9,7 @@ const mobileMenu=()=> {
     document.querySelector(".hamburger").classList.toggle("active");
     document.querySelector(".nav-menu").classList.toggle("active");
 }
-const closeMenu=()=> {
+function closeMenu() {
     document.querySelector(".hamburger").current.classList.remove("active");
     document.querySelector(".nav-menu").classList.remove("active");
 }
@@ -40,8 +40,8 @@ return(
                             <nav className="navigation">
                             <ul className="mainmenu  nav-item">
                                 <li  onClick={()=>onRouteChange('home')}><a>Home</a></li>
-                                <li><a href="">Offers Zone</a></li>
-                                <li><a href="">My Orders</a></li>
+                                <li><a>Offers Zone</a></li>
+                                <li><a>My Orders</a></li>
                                 <li><label for="products">Category</label><input type="checkbox" id="products"/>
                                 <ul className="submenu nav-links">
                                     <li onClick={()=>onRouteChange('catagory-product')}><a>Mobiles and Tablets</a></li>
@@ -84,7 +84,7 @@ return(
                 <span className="bar"></span>
             </div>
             
-            <p className="nav-logo">&#x2316;India</p>
+            <p className="logo">&#x2316;India</p>
 
         </nav>
 </header>
