@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/E-shop/static/css/main.c6d3d8ce.chunk.css",
-    "main.js": "/E-shop/static/js/main.d472ddb5.chunk.js",
-    "main.js.map": "/E-shop/static/js/main.d472ddb5.chunk.js.map",
-    "runtime-main.js": "/E-shop/static/js/runtime-main.3c502486.js",
-    "runtime-main.js.map": "/E-shop/static/js/runtime-main.3c502486.js.map",
-    "static/js/2.7d9009c6.chunk.js": "/E-shop/static/js/2.7d9009c6.chunk.js",
-    "static/js/2.7d9009c6.chunk.js.map": "/E-shop/static/js/2.7d9009c6.chunk.js.map",
-    "static/js/3.5797e5ba.chunk.js": "/E-shop/static/js/3.5797e5ba.chunk.js",
-    "static/js/3.5797e5ba.chunk.js.map": "/E-shop/static/js/3.5797e5ba.chunk.js.map",
+    "main.css": "/E-shop/static/css/main.389211d0.chunk.css",
+    "main.js": "/E-shop/static/js/main.23ce0db0.chunk.js",
+    "main.js.map": "/E-shop/static/js/main.23ce0db0.chunk.js.map",
+    "runtime-main.js": "/E-shop/static/js/runtime-main.fbd8683f.js",
+    "runtime-main.js.map": "/E-shop/static/js/runtime-main.fbd8683f.js.map",
+    "static/js/2.4f0236f8.chunk.js": "/E-shop/static/js/2.4f0236f8.chunk.js",
+    "static/js/2.4f0236f8.chunk.js.map": "/E-shop/static/js/2.4f0236f8.chunk.js.map",
+    "static/js/3.8a53b335.chunk.js": "/E-shop/static/js/3.8a53b335.chunk.js",
+    "static/js/3.8a53b335.chunk.js.map": "/E-shop/static/js/3.8a53b335.chunk.js.map",
     "index.html": "/E-shop/index.html",
-    "static/css/main.c6d3d8ce.chunk.css.map": "/E-shop/static/css/main.c6d3d8ce.chunk.css.map",
-    "static/js/2.7d9009c6.chunk.js.LICENSE.txt": "/E-shop/static/js/2.7d9009c6.chunk.js.LICENSE.txt",
+    "static/css/main.389211d0.chunk.css.map": "/E-shop/static/css/main.389211d0.chunk.css.map",
+    "static/js/2.4f0236f8.chunk.js.LICENSE.txt": "/E-shop/static/js/2.4f0236f8.chunk.js.LICENSE.txt",
     "static/media/p1.58bef64c.webp": "/E-shop/static/media/p1.58bef64c.webp",
     "static/media/p2.b627f17e.webp": "/E-shop/static/media/p2.b627f17e.webp",
     "static/media/p3.9a79b196.webp": "/E-shop/static/media/p3.9a79b196.webp",
     "static/media/p4.36b28b29.webp": "/E-shop/static/media/p4.36b28b29.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.3c502486.js",
-    "static/js/2.7d9009c6.chunk.js",
-    "static/css/main.c6d3d8ce.chunk.css",
-    "static/js/main.d472ddb5.chunk.js"
+    "static/js/runtime-main.fbd8683f.js",
+    "static/js/2.4f0236f8.chunk.js",
+    "static/css/main.389211d0.chunk.css",
+    "static/js/main.23ce0db0.chunk.js"
   ]
 }
