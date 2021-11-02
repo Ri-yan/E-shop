@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/E-shop/static/css/main.885ae60d.chunk.css",
-    "main.js": "/E-shop/static/js/main.21269557.chunk.js",
-    "main.js.map": "/E-shop/static/js/main.21269557.chunk.js.map",
+    "main.css": "/E-shop/static/css/main.abe80c62.chunk.css",
+    "main.js": "/E-shop/static/js/main.fff3cfac.chunk.js",
+    "main.js.map": "/E-shop/static/js/main.fff3cfac.chunk.js.map",
     "runtime-main.js": "/E-shop/static/js/runtime-main.5160ac35.js",
     "runtime-main.js.map": "/E-shop/static/js/runtime-main.5160ac35.js.map",
     "static/js/2.19867855.chunk.js": "/E-shop/static/js/2.19867855.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.a70f7ca4.chunk.js": "/E-shop/static/js/3.a70f7ca4.chunk.js",
     "static/js/3.a70f7ca4.chunk.js.map": "/E-shop/static/js/3.a70f7ca4.chunk.js.map",
     "index.html": "/E-shop/index.html",
-    "static/css/main.885ae60d.chunk.css.map": "/E-shop/static/css/main.885ae60d.chunk.css.map",
+    "static/css/main.abe80c62.chunk.css.map": "/E-shop/static/css/main.abe80c62.chunk.css.map",
     "static/js/2.19867855.chunk.js.LICENSE.txt": "/E-shop/static/js/2.19867855.chunk.js.LICENSE.txt",
     "static/media/p1.58bef64c.webp": "/E-shop/static/media/p1.58bef64c.webp",
     "static/media/p2.b627f17e.webp": "/E-shop/static/media/p2.b627f17e.webp",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.5160ac35.js",
     "static/js/2.19867855.chunk.js",
-    "static/css/main.885ae60d.chunk.css",
-    "static/js/main.21269557.chunk.js"
+    "static/css/main.abe80c62.chunk.css",
+    "static/js/main.fff3cfac.chunk.js"
   ]
 }
