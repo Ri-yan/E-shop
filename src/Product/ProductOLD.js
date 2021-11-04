@@ -1,31 +1,24 @@
 import React , { useState } from "react";
-import Slider from "../Slider/Slider";
 import './Product.css';
-import ProductAbout from "./ProductAbout";
 import {ProductData} from './ProductData.js';
-import ProductOLD from "./ProductOLD";
 
-const Product1=({slides,onRouteChange})=>{
-    // const [current, setCurrent] = useState(0);
-    // let length = slides.length;
-    // const nextSlide = () => {
-    //   setCurrent(current === length - 1 ? 0 : current + 1);
-    // };
-    // const prevSlide = () => {
-    //   setCurrent(current === 0 ? length - 1 : current - 1);
-    // };
+const ProductOLD=({slides,onRouteChange})=>{
+    const [current, setCurrent] = useState(0);
+    let length = slides.length;
+    const nextSlide = () => {
+      setCurrent(current === length - 1 ? 0 : current + 1);
+    };
+    const prevSlide = () => {
+      setCurrent(current === 0 ? length - 1 : current - 1);
+    };
   
-    // if (!Array.isArray(slides) || slides.length <= 0) {
-    //   return null;
-    // }
-
+    if (!Array.isArray(slides) || slides.length <= 0) {
+      return null;
+    }
     return(
-
-<section className='about'>
-    <div className='about-title'>
-      <Slider onRouteChange={onRouteChange}/>
-      {/* <ProductOLD slides={slides}/> */}
-        {/* <div className='previews'>
+<div className='about-title'>
+ 
+<div className='previews'>
           {
           ProductData.map((preimg, index) => {
           return (
@@ -63,10 +56,8 @@ const Product1=({slides,onRouteChange})=>{
     <div className='b' onClick={()=>onRouteChange('cart')}>Add to cart</div>
     <div className='b'onClick={()=>onRouteChange('cart')}>Buy</div>
     </div>
-    </div> */}
     </div>
-    <ProductAbout onRouteChange={onRouteChange}/>
-    </section> 
+    </div> 
     );
 }
-export default Product1;
+export default ProductOLD;

@@ -11,6 +11,10 @@
     width: 50%;
     
 }
+
+.bo{
+    border: 2px solid blue;
+}
 .imgtags{
     height: 20vh;
     width: 100%;
@@ -72,7 +76,7 @@ height:100%;
     height: 100vh;
     display: flex;
     position: relative;
-    top: 20vh;
+    top: 15vh;
 }
 .about-title{
     width: 50%;
@@ -93,6 +97,9 @@ height:100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    font-size: 80%;
 }
 .about-pages{
     position: absolute;
@@ -100,6 +107,9 @@ height:100%;
     width: 50%;
 }
 .b{
+    text-align: center;
+    color: #f1e8db;
+    font-weight: 500;
     font-size: 0.7em;
     background: orangered;
     padding: 10px 20px;
@@ -124,20 +134,27 @@ height:100%;
 
 
 /**preview bar**/
-.previews{
+.previews {
     display: flex;
+    position: relative;
+    top: 3%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    width: 20%;
-    background: rgb(245, 219, 219);
+    height: 70%;
+    width: 18%;
+    background: rgb(228, 227, 227);
     margin-bottom: 20px;
+    overflow: scroll;
+    padding-top: 5vh;
+    box-shadow: 0px 0px 8px 0px;
+}
+.previews::-webkit-scrollbar {
+    display: none;
 }
 .preimg{
-    border: 1px solid #00000038;
     box-shadow: 0px 0px 1px 0px;
-    margin: 5px;
+    margin: 2px;
     height: 80px;
     width: 80px;
     cursor: pointer;
@@ -293,7 +310,7 @@ th{
     flex-direction: column;
     align-items: flex-start;
     background: burlywood;
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin: 10px;
     font-size: 2rem;
@@ -303,26 +320,51 @@ th{
 .sim{
     height: 100vh;
 }
+
+
+.show {
+    position: relative;
+    top: -60px;
+    background-color: #0000002a;
+    height: 9vh;
+    text-align: center;
+    width: 100%;
+}
+
+.history {
+    display: flex;
+    font-size: 150%;
+    cursor: pointer;
+}
 @media only screen and (max-width: 768px){
 .about-title{
-    flex-direction: column;
+    flex-direction: column-reverse;
     position: relative;
     width: -webkit-fill-available;
 }
-.previews{
+.previews {
     display: flex;
     flex-direction: row;
-    height: 20vh;
-    width: 71vh;
+    padding: 20px;
+    height: 13vh;
     background: rgb(245, 219, 219);
-    justify-content: center;
-    align-items: center;
     width: -webkit-fill-available;
-
+    align-items: flex-start;
+}
+/* .history{
+    position: absolute;
+    display: none;
+    top: 1vh;
+} */
+.history {
+    position: absolute;
+    display: flex;
+    margin: -17px 0px;
+    top: 1vh;
 }
 .sliderup {
     position: absolute;
-    top: 0px;
+    top: 2%;
     left: 0px;
     height: 12.5vh;
     width: 5vw;
@@ -334,7 +376,7 @@ th{
 }
 .sliderdown {
     position: absolute;
-    top: 0px;
+    top: 2%;
     right: 0px;
     height: 12.5vh;
     width: 5vw;
@@ -346,8 +388,8 @@ th{
 }
 .sliderL {
     position: absolute;
-    height: 70vh;
-    top: 130px;
+    height: 57vh;
+    top: 14px;
     width: 6vw;
     left: 0px;
     background: #00000002;
@@ -358,8 +400,8 @@ th{
 }
 .sliderR {
     position: absolute;
-    height: 70vh;
-    top: 130px;
+    height: 57vh;
+    top: 14px;
     width: 6vw;
     right: 0px;
     background: #00000002;
@@ -372,20 +414,22 @@ th{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    width: 117vw;
+    width: 100vw;
 }
 .about-pages{
     position: unset;
     width: -webkit-fill-available;
 }
-.pre{
-    height: 100%;
-    width: 90%;
-}
+
+    .pre {
+        height: 100%;
+        width: 90%;
+        margin: 2% 5.3%;
+    }
+
 .pbuy{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .psub{
     width: 30vw;
@@ -397,6 +441,7 @@ th{
     margin: 30px;
 }
 .pdetails{
+    margin-top:30px ;
     width: -webkit-fill-available;
 }
 .product{
@@ -404,5 +449,15 @@ th{
 }
 .product img{
     width: 90%;
+}
+.preimg{
+    height: 65px;
+    width: 65px;
+}
+.show {
+    top: -9vh;
+    font-size: 170%;
+    height: 9vh;
+    color: white;
 }
 }

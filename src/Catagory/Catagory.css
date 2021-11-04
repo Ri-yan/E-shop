@@ -15,14 +15,18 @@
     border-radius: 12px;
     margin: 5px;
     box-shadow: 0px 0px 4px 1px;
+    background: #482ff7;
+    top: 2vh;
 }
 .Cknow{
-    border: 1px solid #4bfbea;
-    background: #4bfbea;
+    border: 1px solid #482ff7;
+    background: #482ff7;
+    background: #ffffff;
     box-shadow: 0px 0px 0px 0px;
     border-radius: 6px;
     padding: 5px 30px;
     cursor: pointer;
+    color: #482ff7;
 
 }
 .k{
@@ -42,4 +46,18 @@
     place-items: center center;
     grid-gap: 10px;
     padding: 20px;
+    overflow: hidden;
+    height: 120vh;
+}
+.showc{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px 50px;
+    background: #00000046;
+    font-size: 2em;
+    cursor: pointer;
+    position: relative;
+    bottom: 18vh;
+    height: 11vh;
 }

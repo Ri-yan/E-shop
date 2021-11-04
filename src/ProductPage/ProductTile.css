@@ -1,0 +1,98 @@
+
+.list{
+    position: relative;
+    top:20vh;
+    margin: 20px;
+ 
+}
+.Ptile{
+    width: 20%;
+    width: -webkit-fill-available;
+    height: 50vh;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 250ms;
+}
+.Ptile:hover:hover {
+    transform: scale(1.03);
+  }
+.Pimg{
+    border: none;
+    margin: 0px;
+    height: 50%;
+    width: 100%;
+    object-fit: fill;
+}
+.Pdis{
+    font-size: 16px;
+    /* margin: 15px 0px 0px 15px; */
+    padding: 15px 0px 5px 15px;
+}
+.Pname{
+    font-size: 18px;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+.Manufac{
+    font-size: 14px;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.507);
+}
+.Pdissmall{
+    font-size: 14px;
+    font-size: 1vw;
+}
+.Pstars{
+    display: flex;
+    font-size: 18px;
+    font-size: 1.2vw;
+}
+.Pprice{
+    font-size: 20px;
+    font-size: 1.3vw;
+}
+strike{
+    color: rgba(0, 0, 0, 0.411);
+    margin-left: 10px;
+}
+.Pdelivery {
+    font-size: 10px;
+    font-size: 0.8vw;
+    text-align: right;
+    margin: 0px 10px;
+    color: #000000a6;
+}
+@media only screen and (max-width: 768px){
+    .Ptile{
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    .Pimg{
+        width: 40%;
+        height: auto;
+        object-fit: cover;
+    }
+    .Pname{
+        font-size: 20px;
+    }
+    .Manufac {
+        font-size: 14px;
+    }
+    .Pdissmall{
+        font-size: 15PX;
+    }
+    .Pstars{
+        font-size: 20px;
+    }
+    .Pprice{
+        font-size: 24px;
+    }
+    .Pdelivery {
+        font-size: 10px;
+    }
+
+}

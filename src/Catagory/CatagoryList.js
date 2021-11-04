@@ -1,41 +1,32 @@
-import react from 'react';
+import React from 'react';
+import Catagory from './Catagory';
 import './Catagory.css';
-import Catagory from './Catagory.js';
+// import Catagory from './Catagory.js';
+import {Cdata} from './CatagoryData.js';
 const CatagoryList=({onRouteChange})=>{
+  const overF=()=>{
+    document.getElementById("scroll").style.overflow = "visible";
+    document.getElementById("scroll").style.height = "unset";
+    document.getElementById("scrollA").style.display = "none";
+
+  }
     return(
-        <div className='grid'>
-            <div className='card'>
-            <div className='Cname'>CatagoryName</div>
-            <div className=''>
-            <div onClick={()=>onRouteChange('catagory-product')} className='Cknow'>Enter</div>
-            </div>
+        <div>
+        <div className='grid' id='scroll'>
+        {
+		            Cdata.map((cname, i) => {
+		              return (
+                        <Catagory 
+                        key={i} 
+                        cname = {Cdata[i].cname} 
+                        onRouteChange={onRouteChange}
+                        />
+		              );
+		            })
+		          }	
+                  
         </div>
-        <div className='card'>
-            <div className='Cname'>CatagoryName</div>
-            <div className=''>
-            <div onClick={()=>onRouteChange('catagory-product')} className='Cknow'>Enter</div>
-            </div>
-        </div>
-        <div className='card'>
-            <div className='Cname'>CatagoryName</div>
-            <div className=''>
-            <div onClick={()=>onRouteChange('catagory-product')} className='Cknow'>Enter</div>
-            </div>
-        </div>
-        <div className='card'>
-            <div className='Cname'>CatagoryName</div>
-            <div className=''>
-            <div onClick={()=>onRouteChange('catagory-product')} className='Cknow'>Enter</div>
-            </div>
-        </div>
-            <Catagory/>
-            <Catagory/>
-            <Catagory/>
-            <Catagory/>
-            <Catagory/>
-            <Catagory/>
-            <Catagory/>
-            <Catagory/>
+        <div className='showc' id='scrollA' onClick={()=>overF()}>Show More</div>
         </div>
     );
 }

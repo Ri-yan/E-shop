@@ -1,0 +1,81 @@
+.A {
+  position: relative;
+  top: 0vh;
+  display: flex;
+  width: 50%;
+  height: 100vh;
+}
+.Pcontainer{
+  margin: auto;
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+}
+.Pcontainer .selected {
+  width: 80%;
+  height: 100%;
+  border: 4px solid purple;
+}
+.Pcontainer .imgContainer{
+  background: blueviolet;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Pcontainer .imgContainer .SP {
+  width: 70%;
+  height: 100%;
+}
+
+.Pcontainer .imgContainer .SP :active{
+  border: 2px solid purple;
+
+}
+.SP{
+  height: 20px;
+}
+img{
+  display: block;
+  cursor: pointer;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 768px){
+  .A {
+    position: relative;
+    top: 0vh;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+  .Pcontainer {
+  margin: auto;
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.Pcontainer .imgContainer{
+  flex-direction: row;
+  justify-content: unset;
+
+}
+.Pcontainer .imgContainer .SP {
+  width: 50px;
+  height: 50px;
+}
+}
+
+.d{
+  position: unset;
+  top:20vh;
+  display: flex;
+}
+/* .image {
+  height: 60vh;
+  width: 50%;
+} */

@@ -9,6 +9,7 @@
     width: 100%;
     align-items: center;
     background-size: contain;
+    object-fit: fill;
 }
 .mySlides{
     display: none;

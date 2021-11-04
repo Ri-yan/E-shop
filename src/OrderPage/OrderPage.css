@@ -1,0 +1,145 @@
+.oorder{
+    position: relative;
+    top: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+.hh{
+    position: relative;
+    top: 20vh;
+    margin-left: 20px;
+}
+.oitems{
+    height: 100vh;
+    width: 100%;
+    background: #e18969;
+    margin: 20px;
+}
+.oprice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 80vw;
+    background: #fffcf4;
+    margin: 20px;
+}
+.oordered{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    width: 96%;
+    height: 40vh;
+    margin: 10px;
+}
+img{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.oopre{
+    width: 80%;
+    height: auto;
+}
+.oopreview{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+.ovalue{
+    background: rgb(228, 225, 225);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1em;
+    width: 80%;
+    height: 8vh;
+    font-size: 2.5em;
+
+}
+.ovalue input{
+    font-size: 1em;
+    width: 40px;
+    height: 30px;
+    text-align: -webkit-center;
+    cursor: pointer;
+    
+    
+}
+.ovalue input :hover{
+    background: gray;
+}
+.ovalue2{
+    margin-top: 18vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.oorderabout{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    background: cadetblue;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+}
+.oodis{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.ooin{
+    width: 56%;
+    margin-bottom: 30px;
+}
+.oavail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.oosub{
+    margin-bottom: 50px;
+}
+table{
+    font-size: 25px;
+    width: 100%;
+    height: 50vh;
+}
+.oorderbutton{
+    padding: 10px;
+    font-size:25px;
+    color: aliceblue;
+    border: 1px solid black;
+    background: rgb(255, 81, 18);
+    width: 60%;
+    margin: 15px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px){
+    .oitems {
+        height: fit-content;
+    }
+    .oorder {
+        flex-direction: column;
+    }
+    .oordered {
+        height: 25vh;
+    }
+    .ovalue2 {
+        margin-top: 0px;
+    }
+    .oprice {
+        height: -webkit-fill-available;
+        width: 95vw;
+        margin: 0px;
+    }
+}

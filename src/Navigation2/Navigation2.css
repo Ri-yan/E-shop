@@ -84,6 +84,7 @@ a {
     font-weight: 500;
     color: #482ff7;
     margin: 0px 10px;
+    cursor: pointer;
 }
 .logo {
     margin: 0px;
@@ -126,6 +127,7 @@ a {
     .nav-menu.active {
         left: 0;
         border:solid 1px #101010;
+        z-index: 2;
     }
 
     .nav-item {
@@ -138,7 +140,7 @@ a {
     }
 
     .hamburger {
-        z-index: 1;
+        z-index: 3;
         display: block;
         cursor: pointer;
     }
@@ -156,7 +158,6 @@ a {
 /* } */
 .search{
     border:2px solid rgb(86, 43, 226);
-    border-radius: 2%;
 }
 .searchsub{
     height: 2.7rem;
@@ -169,6 +170,46 @@ a {
 }
 
 
+form {
+    /* background-color: #5360f1; */
+    width: 25%;
+    height: 4h;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    color: #5360f1;
+  }
+  
+  #form input {
+    all: unset;
+    font: 16px system-ui;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  
+  #form ::placeholder {
+    color: #fff;
+    opacity: 0.7; 
+  }
+  
+  #form svg {
+    color: #5360f1;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    /* padding: 10px; */
+    padding-top: 3px;
+  }
+  
+  #form button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
 
 /* define a fixed width for the entire menu */
 
@@ -190,7 +231,7 @@ a {
   
   /* make ALL links (main and submenu) have padding and background color */
   
-  .mainmenu a,
+  .mainmenu p,
   .mainmenu label {
     display: block;
     background-color: #f5f5f5;
@@ -206,7 +247,7 @@ a {
   
   /* add hover behaviour */
   
-  .mainmenu a:hover {
+  .mainmenu p:hover {
     background-color: #C5C5C5;
   }
   
@@ -227,14 +268,14 @@ a {
     CSS reads down the page, so code at the bottom will overwrite the code at the top.
   */
   
-  .submenu a {
+  .submenu p {
     background-color: #c2b6b6c5;
   }
   
   
   /* hover behaviour for links inside .submenu */
   
-  .submenu a:hover {
+  .submenu p:hover {
     background-color: #993;
   }
   
@@ -249,15 +290,73 @@ a {
     -webkit-transition: all 0.5s ease-out;
   }
 
+.Pbar{
+  display: flex;
+  justify-content: space-evenly;
+  overflow: scroll;
+  color: #5360f1;
+  font-weight: 500;
+  font-size: 150%;
+  cursor: pointer;
+}
+.Pbar::-webkit-scrollbar {
+  display: none;
+}
+.Pbar .PP{
+  margin: 5px 6vw;
+  text-align: center;
+}
+
+
+.svg-icon {
+  width: 1.5em;
+  height: 1.2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #5360f1;
+}
+
+.svg-icon circle {
+  stroke: #5360f1;
+  stroke-width: 1;
+}
+.loc{
+  display: flex;
+  flex-direction: row;
+  color: #5360f1;
+  font-size: 1.6em;
+}
+.login{
+  position: absolute;
+  margin-top: 0.4%;
+  right: 8%;
+  color: #5360f1;
+  font-weight: 500;
+  font-size: 150%;
+  cursor: pointer;
+}
   @media only screen and (max-width: 768px){
     .nav-menu{
         width: 72%;
     }
-    .search{
-        width: 70%;
-        height: 5vh;
-    }
+    .search {
+      width: 50%;
+      height: 4vh;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      position: relative;
+      right: 35px;
+  }
     .logo{
-        font-size: 1em;
+        font-size: 2em;
+        font-size: 150%;
+
     }
+    .login{
+      right: 12%;
+    }
+
   }

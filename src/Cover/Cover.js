@@ -17,8 +17,8 @@ const Cover=({slides})=>{
   }
 		return(		
   <div className="c">
-    <button class="slideright" onClick={prevSlide}>&#10094;</button>
-    <button class="slideleft"  onClick={nextSlide}>&#10095;</button>
+    <button className="slideright" onClick={prevSlide}>&#10094;</button>
+    <button className="slideleft"  onClick={nextSlide}>&#10095;</button>
      {CoverData.map((slide, index) => {
         return (
           <div

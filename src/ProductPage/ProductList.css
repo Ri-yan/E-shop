@@ -1,0 +1,28 @@
+.h{
+    position: relative;
+    display: flex;
+    font-size: 150%;
+    cursor: pointer;
+    top: 15vh;
+    z-index: 0;
+    margin: 14px;
+}
+.Pgrid {
+    margin: 0px 20px;
+    position: relative;
+    top:20vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 0.9fr));
+    grid-template-rows: repeat(auto-fit,1fr);
+    place-items: center center;
+    grid-gap: 10px;
+    height: auto;
+    justify-content: center;
+}
+@media only screen and (max-width: 768px){
+    .Pgrid{
+        margin: 0px;
+        grid-template-columns: repeat(auto-fit,minmax(250px, 0.96fr));
+
+    }
+}
