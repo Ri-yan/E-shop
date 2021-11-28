@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/E-shop/static/css/main.7c35f72d.chunk.css",
-    "main.js": "/E-shop/static/js/main.81ea61a5.chunk.js",
-    "main.js.map": "/E-shop/static/js/main.81ea61a5.chunk.js.map",
-    "runtime-main.js": "/E-shop/static/js/runtime-main.5a1f816a.js",
-    "runtime-main.js.map": "/E-shop/static/js/runtime-main.5a1f816a.js.map",
-    "static/js/2.3e6ede3d.chunk.js": "/E-shop/static/js/2.3e6ede3d.chunk.js",
-    "static/js/2.3e6ede3d.chunk.js.map": "/E-shop/static/js/2.3e6ede3d.chunk.js.map",
-    "static/js/3.a9fca2e0.chunk.js": "/E-shop/static/js/3.a9fca2e0.chunk.js",
-    "static/js/3.a9fca2e0.chunk.js.map": "/E-shop/static/js/3.a9fca2e0.chunk.js.map",
+    "main.css": "/E-shop/static/css/main.63919e0a.chunk.css",
+    "main.js": "/E-shop/static/js/main.3ede7786.chunk.js",
+    "main.js.map": "/E-shop/static/js/main.3ede7786.chunk.js.map",
+    "runtime-main.js": "/E-shop/static/js/runtime-main.23e72b94.js",
+    "runtime-main.js.map": "/E-shop/static/js/runtime-main.23e72b94.js.map",
+    "static/js/2.3d6924ad.chunk.js": "/E-shop/static/js/2.3d6924ad.chunk.js",
+    "static/js/2.3d6924ad.chunk.js.map": "/E-shop/static/js/2.3d6924ad.chunk.js.map",
+    "static/js/3.d1bc3788.chunk.js": "/E-shop/static/js/3.d1bc3788.chunk.js",
+    "static/js/3.d1bc3788.chunk.js.map": "/E-shop/static/js/3.d1bc3788.chunk.js.map",
     "index.html": "/E-shop/index.html",
-    "static/css/main.7c35f72d.chunk.css.map": "/E-shop/static/css/main.7c35f72d.chunk.css.map",
-    "static/js/2.3e6ede3d.chunk.js.LICENSE.txt": "/E-shop/static/js/2.3e6ede3d.chunk.js.LICENSE.txt",
-    "static/media/left-arrow.53878c51.svg": "/E-shop/static/media/left-arrow.53878c51.svg",
+    "static/css/main.63919e0a.chunk.css.map": "/E-shop/static/css/main.63919e0a.chunk.css.map",
+    "static/js/2.3d6924ad.chunk.js.LICENSE.txt": "/E-shop/static/js/2.3d6924ad.chunk.js.LICENSE.txt",
+    "static/media/fav.90deb488.svg": "/E-shop/static/media/fav.90deb488.svg",
+    "static/media/left-arrow.d37827c1.svg": "/E-shop/static/media/left-arrow.d37827c1.svg",
     "static/media/p1.58bef64c.webp": "/E-shop/static/media/p1.58bef64c.webp",
     "static/media/p2.b627f17e.webp": "/E-shop/static/media/p2.b627f17e.webp",
     "static/media/p3.9a79b196.webp": "/E-shop/static/media/p3.9a79b196.webp",
     "static/media/p4.36b28b29.webp": "/E-shop/static/media/p4.36b28b29.webp",
-    "static/media/right-arrow.8b8fb639.svg": "/E-shop/static/media/right-arrow.8b8fb639.svg"
+    "static/media/right-arrow.e69630ed.svg": "/E-shop/static/media/right-arrow.e69630ed.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5a1f816a.js",
-    "static/js/2.3e6ede3d.chunk.js",
-    "static/css/main.7c35f72d.chunk.css",
-    "static/js/main.81ea61a5.chunk.js"
+    "static/js/runtime-main.23e72b94.js",
+    "static/js/2.3d6924ad.chunk.js",
+    "static/css/main.63919e0a.chunk.css",
+    "static/js/main.3ede7786.chunk.js"
   ]
 }
