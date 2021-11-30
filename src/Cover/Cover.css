@@ -1,43 +1,127 @@
-.c{
-    width: -webkit-fill-available;
-    position: relative;
-    top: 13vh;
-}
-.image{
-    margin: 5px auto;
-    height: 60vh;
-    width: 100%;
-    align-items: center;
-    background-size: contain;
+/* Slideshow */
+.slideshows {
+    margin: 0 auto;
+    overflow: hidden;
     object-fit: fill;
-}
-.mySlides{
-    display: none;
-}
-.slideleft{
+    max-width: -webkit-fill-available;
+    position: relative;
+    top: 0vh;
+  }
+  .slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+  }
+  .slides {
+    display: inline-block;
+    /* height: 50vh; */
+    width: 100%;
+    border-radius: 40px;
+  }
+  /* Buttons */
+  .slideshowDots {
     position: absolute;
-    top: 5px;
-    height: 60vh;
-    width: 5vw;
-    right: 0px;
-    background:#00000026;
-    font-size: 4rem;
-    border:none;
-    color: cornsilk;
+    top: 44vh;
+    text-align: center;
+    left: 0vw;
+    right: 0vw;
+    z-index: 1;
+  }
+  .slideshowDot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
     cursor: pointer;
+    margin: 15px 7px 0px;
+    background-color: #c4c4c4;
+  }
+  .image{
+    height: 52vh;
+    width: 100%;
+    margin: 0px;
+    /* box-shadow: 0px 20px 20px 0px #000000b5; */
+    border-radius: 12px;
+  }
+  .slideshowDot.active {
+    background-color: #5141e2;
+  }
 
+  .fade-in-image {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
 }
-.slideright{
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  @media only screen and (max-width: 768px){
+  
+  .slideshows {  
+    position: relative;
+    top:1vh;
+  }
+  .image{
+    height: 31vh;
+  }
+  .slideshowDots{
     position: absolute;
-    top: 5px;
-    height: 60vh;
-    width: 5vw;
-    left: 0px;
-    background:#00000026;
-    font-size: 4rem;
-    border:none;
-    color: cornsilk;
-    cursor: pointer;
-
-
+top: 25vh;  
 }
+  }
+
+
+  
+  .fade-in-image {
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }

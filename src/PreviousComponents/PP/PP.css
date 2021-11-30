@@ -4,6 +4,8 @@
   overflow: hidden;
   object-fit: fill;
   max-width: -webkit-fill-available;
+  position: relative;
+  top: 17vh;
 }
 .slideshowSlider {
   white-space: nowrap;
@@ -18,7 +20,7 @@
 /* Buttons */
 .slideshowDots {
   position: absolute;
-  top: 57vh;
+  top: 40vh;
   text-align: center;
   left: 0vw;
   right: 0vw;
@@ -34,9 +36,23 @@
   background-color: #c4c4c4;
 }
 .image{
-  height: 70vh;
+  height: 54vh;
   width: 100%;
 }
 .slideshowDot.active {
   background-color: #5141e2;
+}
+@media only screen and (max-width: 768px){
+
+.slideshows {  
+  position: relative;
+  top:20vh;
+}
+.image{
+  height: 80%;
+}
+.slideshowDots{
+  position: absolute;
+  top:60%;
+}
 }

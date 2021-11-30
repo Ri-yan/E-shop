@@ -1,0 +1,110 @@
+.dis{
+    padding: 20px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid #706d6d4f;
+    background: #fdfdfd;
+}
+.detail{
+    padding: 10px;
+    font-size: 2em;
+    height: 50vh;
+    width: 90%;
+}
+.pdis{
+    font-size: 3.1vh;
+    font-weight: 600;
+}
+td{
+    font-size: 0.7em;
+}
+th{
+    border-right:0.5px solid black;
+}
+
+
+/*Rating*/
+.rating{
+    background: rgba(236, 73, 73, 0.575);
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;padding: 20px;
+    font-size: 2.5em;
+    overflow-y: scroll;
+    border-bottom: 3px solid #706d6d4f;
+    background: #f1e8db;
+}
+.rating::-webkit-scrollbar {
+    display: none;
+  }
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: burlywood;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+.sim{
+    height: 100vh;
+}
+
+
+.show {
+    position: relative;
+    /* top: -60px; */
+    background-color: #0000002a;
+    height: 9vh;
+    text-align: center;
+    width: 100%;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px){
+
+.about-pages{
+    position: unset;
+    width: -webkit-fill-available;
+}
+
+    .pre {
+        height: 100%;
+        width: 90%;
+        margin: 2% 5.3%;
+    }
+
+.pbuy{
+    display: flex;
+    flex-direction: column;
+}
+.psub{
+    width: 30vw;
+}
+.pin{
+    width: 40vw;
+}
+.b{
+    margin: 30px;
+}
+.pdetails{
+    margin-top:30px ;
+    width: -webkit-fill-available;
+}
+.show {
+    top: -9vh;
+    font-size: 170%;
+    height: 9vh;
+    color: white;
+}
+
+}

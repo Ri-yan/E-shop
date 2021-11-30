@@ -72,27 +72,36 @@ strike{
         height: 100%;
     }
     .Pimg{
-        width: 40%;
+        width: 38vw;
         height: auto;
         object-fit: cover;
     }
     .Pname{
         font-size: 20px;
+        font-size: 16.5px;
+
     }
     .Manufac {
         font-size: 14px;
+        font-size: 12px;
     }
     .Pdissmall{
         font-size: 15PX;
+        font-size: 12px;
     }
     .Pstars{
         font-size: 20px;
+        font-size: 16px;
     }
     .Pprice{
         font-size: 24px;
+        font-size: 15px;
     }
     .Pdelivery {
         font-size: 10px;
+    }
+    .Pgrid{
+        grid-gap: 5px;
     }
 
 }

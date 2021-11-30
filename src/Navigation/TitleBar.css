@@ -1,0 +1,140 @@
+.svg-icon {
+    width: 1.5em;
+    height: 1.2em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #5360f1;
+  }
+  .svg-icon circle {
+    stroke: #5360f1;
+    stroke-width: 1;
+  }
+  li {
+      list-style: none;
+  }
+  a {
+      text-decoration: none;
+  }
+.header1{
+    position: sticky;
+    top: -1px;
+    background: white;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 8vh;
+    height: fit-content;
+    width: 100%;
+    padding: 1em 30px 1em 30px;
+    flex-direction: column;
+}
+.title{
+    display: flex;
+}
+.t{
+    display: unset;
+    position: relative;
+    margin: 0px;
+}
+.side{
+    position: absolute;
+    top: 10vh;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.hide{
+    display: none;
+}
+.logo {
+  margin: 0px;
+  font-size: 3vh;
+  font-weight: 500;
+  color: #482ff7;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.loc{
+  display: flex;
+  flex-direction: row;
+  color: #5360f1;
+  font-size: 1.6em;
+  margin: 0px 2px;
+}
+.login{
+  position: absolute;
+  margin-top: 0.4%;
+  right: 8%;
+  color: #5360f1;
+  font-weight: 500;
+  font-size: 150%;
+  cursor: pointer;
+}
+form{
+    width: 25vw;
+} 
+.e{
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width: 768px){
+    .search {
+        height: 30px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        position: relative;
+        right: 0px;
+        width: 70%;
+    }
+    .hide {
+        display: flex;
+        margin: auto;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0 0 1px 13px;
+    }
+    .hide .hamburger{
+        margin-top: -13px;
+    }
+   .hide1{
+       display: none;
+   }
+    /* .logo {
+        font-size: 2em;
+        padding: 0px;
+        margin: 0px 0px 0px 9px;
+    } */
+    .logo {
+      position: relative;
+      font-size: 2.4em;
+      top: -10px;
+      padding: 0px;
+      margin: 0px 0px 0px 9px;
+  }
+    .login{
+      right: 13vw;
+      position: absolute;
+    }
+.loc{
+  position: absolute;
+      margin-top: 0.4%;
+      right: 20%;
+}
+.header1{
+    padding: 0px;
+}
+.t{
+  position: absolute;
+  top: 4rem;
+}
+.title{
+    padding: 10px 0px;
+}
+}
+ 

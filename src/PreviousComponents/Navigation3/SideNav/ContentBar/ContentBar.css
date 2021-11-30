@@ -1,0 +1,39 @@
+
+.Pbar{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: scroll;
+    color: #5360f1;
+    font-weight: 500;
+    font-size: 140%;
+    cursor: pointer;
+  }
+  .Pbar::-webkit-scrollbar {
+    display: none;
+  }
+  .Pbar .PP{
+    margin: 5px 6vw;
+    text-align: center;
+  }
+@media only screen and (max-width: 768px){
+    .Pbar {
+      position: absolute;
+      display: flex;
+      top: 13.3vh;
+      left: 0px;
+      width: -webkit-fill-available;
+      overflow: scroll;
+      box-shadow: 0px 15px 10px -18px ;
+      /* padding-left: 50vw; */
+      padding-left: 65vw;
+      align-items: center;
+      height: 8vh;
+      background: #fff;
+  }
+}
+@media only screen and (max-height: 480px)
+{
+  .Pbar{
+    top: 22vh;
+  }
+}

@@ -76,7 +76,7 @@ height:100%;
     height: 100vh;
     display: flex;
     position: relative;
-    top: 15vh;
+    /* top: 19vh; */
 }
 .about-title{
     width: 50%;
@@ -413,8 +413,10 @@ th{
 .about{
     flex-direction: column;
     align-items: center;
+    align-items: center;
     width: 100%;
-    width: 100vw;
+    /* width: 100vw; */
+    top: 10vh;
 }
 .about-pages{
     position: unset;

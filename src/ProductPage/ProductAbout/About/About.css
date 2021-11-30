@@ -1,0 +1,213 @@
+.discription{
+    width: 100%;
+    padding-top: 2vh;
+}
+.pdetails {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    padding: 20px;
+    height: 50vh;
+    height: -webkit-fill-available;
+    width: 100%;
+    border-bottom: 3px solid #706d6d4f;
+    background: #f7f7f7;
+}
+.pdetails .pname {
+    font-size: 5vh;
+    font-weight: 400;
+    float: left;
+}
+.by{
+    font-size: 2.2vh;
+}
+.RR{
+    font-size: 2.5vh;
+}
+.price{
+    font-size: 5vh;
+}
+.offer {
+    display: flex;
+    margin-top: 20px;
+    font-size: 2.3vh;
+    font-weight: 600;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.offer1 {
+    font-size: 2vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: fit-content;
+    line-height: 0.1px;
+
+}
+.pavail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2.3vh;
+    font-weight: 400;
+    width: 100%;
+    height: 20vh;
+    padding: 20px;
+    border-bottom: 3px solid #706d6d4f;
+    background: #f7f7f7;
+}
+.pinput {
+    display: flex;
+    margin: 10px;
+    width: -webkit-fill-available;
+    border-radius: 50%;
+    align-items: center;
+}
+.pin{
+    width:fit-content ;
+    height: 5.5vh;
+    border: solid rgba(17, 17, 17, 0.048);
+}
+.psub{
+    background: rgb(7, 7, 17);
+    color: white;
+    width: 7vw;
+    height: 5vh;
+    border-radius: 4%;
+    border: none;
+}
+input{
+    padding: 0.5px;
+    font-size: 2vh;
+}
+.Varientpcolor {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background: #f7f7f7;
+}
+
+.pvarient{
+font-size: 2.5vh;
+font-weight: 400;
+float: left;
+
+}
+.varients{
+    display: flex;
+}
+.preimg{
+    box-shadow: 0px 0px 1px 0px;
+    margin: 3px;
+    height: 10vh;
+    width: 80px;
+    cursor: pointer;
+}
+.vname{
+    font-size: 2vh;
+}
+.add {
+    display: flex;
+    font-size: 3vh;
+    align-items: center;
+    padding: 14px 0px 0px 0px;
+}
+.btn {
+    margin: 0px 13px;
+    background: black;
+    padding: 4px 8px;
+    color: white;
+    border-radius: 24%;
+    font-size: 3vh;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+}
+  .num {
+        margin: 0px -10px;
+        background: white;
+        padding: 4px 8px;
+        color: black;
+        border-radius: 1%;
+        border: none;
+        font-size: 3vh;
+        font-weight: 600;
+        cursor: pointer;
+        display: block;
+    }
+.p1{
+    display: flex;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    background: #f7f7f7;
+    border-bottom: 3px solid #706d6d4f;
+
+
+}
+.btn-buy{
+    margin: 10px 13px;
+    background: black;
+    padding: 8px 8px;
+    color: white;
+    border-radius: 2px;
+    font-size: 2vh;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+.fav {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    top: 25vh;
+    right: 3vw;
+    cursor: pointer;
+}
+@media screen and (max-width: 700px){
+.p1{
+    flex-direction: column-reverse;
+}
+.options{
+    flex-direction: row;
+    width: -webkit-fill-available;
+    border-bottom: unset;
+
+}
+.btn-buy{
+    width: 20vh;
+}
+.discription{
+    padding-top: 10vh;
+}
+.fav {
+    position: absolute;
+    height: 23px;
+    width: 25px;
+    top: 27.5vh;
+    right: 13px;
+}
+.pdetails .pname{
+    font-size: 4vh;
+}
+.price{
+    font-size: 4vh;
+}
+.offer{
+    font-size: 2.5vh;
+}
+.by .RR .offer1{
+    font-size: 2vh;
+}
+.btn {
+    margin: 0px 9px;
+    padding: 0px 8px;
+}
+}

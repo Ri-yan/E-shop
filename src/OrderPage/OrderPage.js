@@ -1,8 +1,8 @@
 import React from 'react';
 import './OrderPage.css';
-import {ProductData} from '../Product/ProductData.js';
+import {ProductData} from './ProductData.js';
 
-const OrderPage=({onRouteChange})=>{
+const  OrderPage=({onRouteChange})=>{
     const increase=()=>{
         document.getElementsByClassName('quantity')[0].value++;
     }

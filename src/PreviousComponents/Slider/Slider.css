@@ -94,7 +94,7 @@ border: 1px solid black;
 }
 @media screen and (max-width: 700px){
   .scontainer-slider {
-    width: -webkit-fill-available;
+    width: 101vw;
     height: 450px;
     left: 20vw;
 }
@@ -104,7 +104,7 @@ border: 1px solid black;
     left: 80px;
     display: flex;
     flex-direction: row;
-    width: 95vw;
+    width: 90vw;
     overflow: scroll;
 }
   .sdot {

@@ -1,0 +1,43 @@
+.c{
+    width: -webkit-fill-available;
+    position: relative;
+    top: 13vh;
+}
+.image{
+    margin: 5px auto;
+    height: 60vh;
+    width: 100%;
+    align-items: center;
+    background-size: contain;
+    object-fit: fill;
+}
+.mySlides{
+    display: none;
+}
+.slideleft{
+    position: absolute;
+    top: 5px;
+    height: 60vh;
+    width: 5vw;
+    right: 0px;
+    background:#00000026;
+    font-size: 4rem;
+    border:none;
+    color: cornsilk;
+    cursor: pointer;
+
+}
+.slideright{
+    position: absolute;
+    top: 5px;
+    height: 60vh;
+    width: 5vw;
+    left: 0px;
+    background:#00000026;
+    font-size: 4rem;
+    border:none;
+    color: cornsilk;
+    cursor: pointer;
+
+
+}

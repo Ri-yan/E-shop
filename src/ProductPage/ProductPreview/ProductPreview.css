@@ -1,0 +1,124 @@
+.S{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px 2vw;
+  }
+  .scontainer-slider {
+    width: 90%;
+    height: 70vh;
+    position: relative;
+    top: 2vh;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .preimg{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+  }
+  
+  .sslide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+    transition: opacity ease-in-out 0.4s;
+  }
+  .sslide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .sactive-anim {
+    opacity: 1;
+  }
+  
+  .btn-slide {
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    background: #f1f1f161;
+    border: 1px solid rgb(34 34 34 / 14%);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .btn-slide img {
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+  }
+  .prev {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-60%);
+  }
+  .next {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-60%);
+  }
+  
+  
+  .scontainer-dots {
+      position: relative;
+      top: 7vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      overflow-x:scroll ;
+      scrollbar-width: none; 
+  }
+  .scontainer-dots::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+    scrollbar-width: 0px;
+  }
+  .sdot {
+    height: 10vh;
+    width: 100%;
+    border: 3px solid #f1f1f1;
+    margin: 3px 6px;
+    background: #f1f1f1;
+  }
+  .sdot.active {
+    background: rgb(32, 32, 32);
+    border: 1px solid black;
+  }
+  
+  @media screen and (max-width: 700px){
+    .scontainer-slider {
+      /* margin: 100px 10px 0; */
+      margin: 0px;
+      height: 50vh;
+      width: 95%;
+    }
+    .S{
+      padding: 0px;
+    }
+    .prev{
+      left: 0px;
+    }
+    .next{
+      right: 0px;
+    }
+    .btn-slide {
+      width: 30px;
+      height: 50px;
+      border-radius: 25%;
+      background: #f1f1f161;
+      border: 1px solid rgb(34 34 34 / 14%);
+  }
+  .scontainer-dots::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+    scrollbar-width: 0px;
+  }
+  }

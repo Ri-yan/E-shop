@@ -1,9 +1,9 @@
-import React , { useState } from "react";
+// import React , { useState } from "react";
 import Slider from "../Slider/Slider";
 import './Product.css';
 import ProductAbout from "./ProductAbout";
-import {ProductData} from './ProductData.js';
-import ProductOLD from "./ProductOLD";
+// import {ProductData} from './ProductData.js';
+// import ProductOLD from "./ProductOLD";
 
 const Product1=({slides,onRouteChange})=>{
     // const [current, setCurrent] = useState(0);

@@ -1,39 +1,65 @@
-import React, { useState } from 'react';
+import React from "react";
 import './Cover.css';
 import {CoverData} from './CoverData.js';
 
-const Cover=({slides})=>{
-  const [current, setCurrent] = useState(0);
-  let length = slides.length;
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
+const delay = 2500;
 
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null;
+const Cover=()=> {
+  const [index, setIndex] = React.useState(0);
+  const timeoutRef = React.useRef(null);
+
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
   }
-		return(		
-  <div className="c">
-    <button className="slideright" onClick={prevSlide}>&#10094;</button>
-    <button className="slideleft"  onClick={nextSlide}>&#10095;</button>
-     {CoverData.map((slide, index) => {
+
+  React.useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === CoverData.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
+
+    return () => {
+      resetTimeout();
+    };
+  }, [index]);
+
+  return (
+    <div className="slideshows ">
+      <div
+        className="slideshowSlider fade-in-image"
+        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+      >
+        {CoverData.map((slide, index) => {
         return (
           <div
-            className={index === current ? 'slide active' : 'slide'}
+            className= 'slides '
             key={index}
           >
-            {index === current && (
-              <img src={slide.image} alt='travel' className='image' />
-            )}
+              <img src={slide.image} alt='travel' className='image fade-in-image' />
+            )
           </div>
         );
       })}
-    
-  </div>
-	);
-   
+      </div>
+      <div className="slideshowDots">
+        {CoverData.map((_, idx) => (
+          <div
+            key={idx}
+            className={`slideshowDot${index === idx ? " active" : ""}`}
+            onClick={() => {
+              setIndex(idx);
+            }}
+          ></div>
+        ))}
+      </div>
+    </div>
+  );
 }
+
 export default Cover;
