@@ -11,8 +11,8 @@
     height: fit-content;
 }
 .section h1{
-    font-size: 2em;
-    margin-left: 40px;
+    font-size: 3em;
+    margin-left: 30px;
 
 }
 .section h2{
@@ -37,6 +37,53 @@
     align-items: center;
     justify-content: center;
 }
+.write{
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    margin-top: 3rem;
+    align-content: center;
+    margin-left: 5vw;
+}
+.writeIn{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    align-items: center;
+}
+.write label{
+    display: block;
+    font-size: large;
+}
+.write textarea{
+    resize: none;
+    display:block;
+    height:15vh;
+    width: 50vw;
+    font-size: medium;
+    box-shadow: 20px -3px 20px 0px #0000002b;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: whitesmoke;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.904);
+    transition: all 1s ease;
+}
+.write input{
+    height:5vh;
+    width:100px;
+    margin: 10px 13px;
+    background: black;
+    padding: 8px 8px;
+    color: white;
+    border-radius: 2px;
+    font-size: 2vh;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
 @media only screen and (max-width: 768px){
 .list{
     padding: 0%;
@@ -46,5 +93,16 @@
 }
 .show{
     margin-top: 0px;
+}
+.write{
+    flex-direction: column;
+    margin: 5em 1em;
+}
+.write textarea{
+    width: -webkit-fill-available;
+}
+.writeIn{
+    width: -webkit-fill-available;
+    flex-direction: column;
 }
 }

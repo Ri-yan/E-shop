@@ -1,15 +1,14 @@
 .Tile{
-    background-color: aquamarine;
-    height: fit-content;
-    font-size: 2em;
-    /* padding: 25px; */
-    padding: 10px;
-    /* padding-bottom:20px; */
-    border-radius: 20px;
-    margin: 10px;
-    padding-right: 25px;
-    transition: all 2s ease;
 
+        background-color: #ececec;
+        height: fit-content;
+        font-size: 2em;
+        padding: 8px;
+        border-radius: 18px;
+        margin: 10px;
+        padding-right: 25px;
+        box-shadow: 0px 0px 3px 1px #00000030;
+        transition: all 2s ease;
 }
 .display{
     display: flex;
@@ -69,6 +68,7 @@
     color: rgba(0, 0, 0, 0.904);
     /* margin-left: 20px; */
     transition: all 1s ease;
+    margin-left: 10px;
 
 }
 .active{
@@ -82,6 +82,7 @@
     margin-bottom: 10px;
     color: rgba(0, 0, 0, 0.904);
     /* margin-left: 20px; */
+    margin-left: 10px;
     transition: all 1s ease;
 }
 .show{
@@ -95,14 +96,23 @@
         width: fit-content;
         margin-top: -8px;
         margin-right: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 8px;
         transition: all 1s ease;
 
 }
 @media only screen and (max-width: 768px){
     
     .Tile{
-        padding-right: 10px;
+       
+            background-color: #ececec;
+            height: fit-content;
+            font-size: small;
+            padding: 8px;
+            border-radius: 18px;
+            margin: 5px 8px;
+            box-shadow: 0px 0px 3px 1px #00000030;
+            transition: all 2s ease;
+        
     }
     .profile{
         height: 50px;

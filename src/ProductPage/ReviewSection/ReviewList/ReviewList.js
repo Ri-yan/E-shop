@@ -9,6 +9,14 @@ const ReviewList=()=>{
         <div className={review.section}>
             <h1>Rating and Reviews</h1>
             <h2>Overall rating-★★★★</h2>
+            <div className={review.write}>
+                <label htmlFor="">Write Your Review</label>
+                <div className={review.writeIn}>
+                    <textarea  name="comment"></textarea>
+                    <input type='button' name='submit' value='submit'/>
+                </div>
+            </div>
+            
             <div className={showactive?review.list:review.listactive} >
                 <ReviewTile/>
                 <ReviewTile/>
