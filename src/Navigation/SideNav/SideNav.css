@@ -1,0 +1,264 @@
+/***********HAMBURGER ICON*****************/
+.hamburger {
+  margin: -6px;
+  z-index: 3;
+  display: block;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 28px;
+  height: 3.5px;
+  margin: 3.5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000000;
+  border-radius: 3em;
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+@media only screen and (max-width: 768px){
+  .hamburger.active .bar:nth-child(1){
+    transform: translate(0vw,13px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translate(0vw,-1px) rotate(-45deg);
+  }
+  .bar {
+    display: block;
+    width: 21px;
+    height: 3px;
+    margin: 4px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+    border-radius: 3em;
+  }
+}
+/***********************/
+
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.0rem 1.5rem;
+}
+li{
+  list-style: none;
+}
+.profile-image{
+  height: 45px;
+  width: 45px;
+  border-radius: 25px;
+}
+.g{
+  margin: 1em 0px;
+}
+.nav-menu {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: -100%;
+  top: 0.1rem;
+  flex-direction: column;
+  background-color: #fff;
+  width: 22%;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  line-height: 10px;
+  box-shadow:0 10px 27px rgba(246, 232, 232, 0.05);
+  overflow: scroll;        
+  }
+.nav-menu::-webkit-scrollbar {
+        display: none;
+  }
+.nav-menu.active {
+    left: 0;
+    z-index: 2;
+    box-shadow: 0px 1px 4px 0px;
+}
+
+.nav-link.nav-logo{
+  color: #475569;
+  margin: 3px;
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+  margin: 0px 10px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border:0.5px solid #101010;
+  padding: 15px 0px;
+  border-radius: 20px;
+  padding: 15px 5px;
+  margin: 17px 55px;
+}
+.nav-link:hover{
+  color: #482ff7;
+}
+    
+.nav-item {
+  margin-left: 0rem;
+  margin: 2.5rem 0;
+  cursor: pointer;
+  padding: 0px 0px;
+  box-shadow: 0px 0px 0px 0px;
+  padding: 0px auto;
+  width: 95%;
+  }
+
+   
+/* } */
+
+/* define a fixed width for the entire menu */
+.navigation {
+    width: -webkit-fill-available;
+  }
+  
+
+  /* SUB MENU PART*/
+/* reset our lists to remove bullet points and padding */
+  .mainmenu,
+  .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+  }
+
+/* make ALL links (main and submenu) have padding and background color */
+  
+#label{
+  cursor:grab;
+}
+
+  .mainmenu p,
+  .mainmenu label {
+    display: block;
+    /* background-color: #f5f5f5; */
+    text-decoration: none;
+    padding: 8% 10%;
+    color: #000;
+    font-size: 2vh;
+    border-bottom: 0.1px solid #00000021;
+  }
+  .mainmenu input {
+    display: none;
+  }
+
+/* add hover behaviour */
+  .mainmenu p:hover {
+    background-color: #C5C5C5;
+  }
+  
+  /* when hovering over a .mainmenu item,
+    display the submenu inside it.
+    we're changing the submenu's max-height from 0 to 200px;
+  */
+  .mainmenu :checked+.submenu {
+    display: block;
+    max-height: 100vh;
+  }
+  
+  /*
+    we now overwrite the background-color for .submenu links only.
+    CSS reads down the page, so code at the bottom will overwrite the code at the top.
+  */
+  .submenu p {
+    background-color: #cfcfcf1c;
+    border: none;
+    line-height: normal;
+  }
+
+  /* hover behaviour for links inside .submenu */
+  .submenu p:hover {
+    background-color: #993;
+  }
+  
+  /* this is the initial state of all submenus.
+    we set it to max-height: 0, and hide the overflowed content.
+  */
+  .submenu {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s ease-out;
+  }
+  .logins{
+    display: none;
+  }
+  .rrr {
+    overflow: scroll;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  @media only screen and (max-width: 768px){
+    .nav-menu{
+        width: 72%;
+    }
+    .logins{
+      display: unset;
+      position: absolute;
+      margin-top: 0.4%;
+      right: 2%;
+      color: #5360f1;
+      font-weight: 500;
+      font-size: 150%;
+      cursor: pointer;
+    }
+    .navbar{
+      padding: 1.7rem;
+    }
+    .nav-link.nav-logo{
+      padding: 3px;
+    }
+    .profile{
+      padding: 4px 2px;
+      line-height: 1;
+  }
+  .nav-logo{
+    padding: 2px;
+    font-size: 1.5em;
+  }
+  .rrr {
+    position: inherit;
+    left: 0px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* transform: translate(-48px, 4px); */
+    background: white;
+    height: -webkit-fill-available;
+    overflow: scroll;
+    box-shadow: 0px 0px 6px 0px rgb(152, 154, 243);
+    margin: 6px 0px 0px 4px;
+    border-radius: 15px;
+}
+.nav-menu.active {
+  box-shadow: 0px 1px 20px 2px white;
+}
+.nav-menu{
+  width: 100%;
+  background: none;
+  backdrop-filter: blur(10px);
+}
+}

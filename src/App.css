@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+*::-webkit-scrollbar{
+  display: none;
+}
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
@@ -11,4 +14,12 @@ html {
 .App{
   height: 100%;
   width: 100%;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+  background-color: none;
 }

@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import './ProductPreview.css'
 import BtnSlider from './BtnSlider'
-import {ProductData} from './ProductData.js';
-export default function ProductPreview() {
+// import {ProductData} from './ProductData.js';
+export default function ProductPreview({ProductData}) {
     const [slideIndex, setSlideIndex] = useState(1)
     const nextSlide = () => {
         if(slideIndex !== ProductData.length){
@@ -29,7 +29,8 @@ export default function ProductPreview() {
                 {ProductData.map((obj, index) => {
                     return (
                         <img
-                        key={obj.id} src={ProductData[index].image} alt='product' 
+                        // key={obj.id} 
+                        src={ProductData[index].image} alt='product' 
                         className={slideIndex === index + 1 ? "sslide sactive-anim" : "sslide"}
                         />     
                     )
@@ -47,7 +48,6 @@ export default function ProductPreview() {
                         />
                     ))}
             </div>
-            
         </div>
     )
 }

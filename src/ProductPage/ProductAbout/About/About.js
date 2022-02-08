@@ -1,5 +1,6 @@
+import { Link } from 'react-router-dom';
 import './About.css';
-import fav from './fav.svg'
+import star from '../../../ICONS/InProductPage/star.svg';
 const AboutProduct=({onRouteChange})=>{
     return(
     <div className='discription'>
@@ -26,9 +27,9 @@ const AboutProduct=({onRouteChange})=>{
          </div>
          </div>
          <div className='options'>
-         <img src={fav} className='fav'  name='favourite'  alt="fav"/>
-         <div onClick={()=>onRouteChange('cart')} className='btn-buy'>Add to Cart</div>
-         <div onClick={()=>onRouteChange('cart')} className='btn-buy'>Buy</div>
+         <img src={star} className='fav'  name='favourite'  alt="star"/>
+         <Link to={'cart'}><div onClick={()=>onRouteChange('cart')} className='btn-buy'>Add to Cart</div></Link>
+         <Link to={'cart'}><div onClick={()=>onRouteChange('cart')} className='btn-buy'>Buy</div></Link>
          {/* <div className='btn-buy'>favourite</div> */}
 
          </div>

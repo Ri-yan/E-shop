@@ -1,4 +1,5 @@
 import React from "react";
+import ReviewList from "../../ReviewSection/ReviewList/ReviewList";
 import './Discription.css';
 
 const Discription=({onRouteChange})=>{
@@ -30,7 +31,9 @@ const Discription=({onRouteChange})=>{
 
 
 <div>
-         <div className='rating'>
+<ReviewList/>
+
+         {/* <div className='rating'>
              <div className=''>Rating and Reviews</div>
              <div className=''>&#9733;&#9733;&#9733;&#9733;</div>
              <div className='review'>
@@ -49,7 +52,7 @@ const Discription=({onRouteChange})=>{
                 <div className='r1'>This pen is very nice you can write your future with ifself.</div>
              </div>
             </div>
-            <div className='show'>show more</div>
+            <div className='show'>show more</div> */}
         </div>
 
         

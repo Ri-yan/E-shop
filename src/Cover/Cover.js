@@ -1,6 +1,6 @@
 import React from "react";
 import './Cover.css';
-import {CoverData} from './CoverData.js';
+import {CoverData} from '../Server/CoverData';
 
 const delay = 2500;
 

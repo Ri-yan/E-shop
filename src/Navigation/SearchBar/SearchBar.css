@@ -1,5 +1,6 @@
 .search{
-    border:2px solid rgb(86, 43, 226);
+    border:1px solid rgb(86, 43, 226);
+    border-radius: 14px;
 }
 .searchsub{
     height: 2.7rem;
@@ -10,19 +11,16 @@
     display: flex;
     align-items: center;
 }
-
-
 form {
-    /* background-color: #5360f1; */
-    width: 25%;
+    width: -webkit-fill-available;
     height: 5vh;
-    margin-bottom: 10px;
     border-radius: 5px;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
+    display: flex;
+    flex-direction: row;
     color: #5360f1;
     transition: width 0.5s;
+    align-items: center;
+  
   }
   
   #form input {
@@ -43,7 +41,6 @@ form {
     fill: currentColor;
     width: 24px;
     height: 24px;
-    /* padding: 10px; */
     padding-top: 3px;
   }
   
@@ -55,15 +52,17 @@ form {
   }
 .dataResult {
   position: absolute;
-  top: 7vh;
+  top: 6em;
   margin: auto;
-  width: 25%;
+  width: auto;
   height: 35vh;
-  background-color: white;
+  background-color: #fffffff1;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
   overflow-y: auto;
-  z-index: 4;
+  z-index: 4;    
+  backdrop-filter: blur(4px);
+  box-shadow: 0px -2.5px 0px 2px white;
 }
 .dataResult::-webkit-scrollbar {
   display: none;
@@ -87,18 +86,34 @@ a {
 
 a:hover {
   background-color: lightgrey;
-  height: 50vh;
+  height: fit-content;
 
 }
 
 @media only screen and (max-width: 768px){
-  /* .dataResult {
-    width: 100%;
-  } */
   .dataResult {
-    width: 98vw;
-    right: -14vw;
-    top: 6vh;
+    width: -webkit-fill-available;
+    left: 0vw;
+    top: 3em;
     z-index: 1;
+    transform: translate(0px, 7em);
+    height: -moz-fit-content;
+    height: 80vh;
+}
+  .search{
+    border: none;
+    box-shadow: 0px 0px 10px 0px #562be2;
   }
+  form {
+    background-color: #ffffff;
+    width: auto;
+    height: 100%;
+    margin-top: 45px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #5360f1;
+    transition: width 0.5s;
+}
 }

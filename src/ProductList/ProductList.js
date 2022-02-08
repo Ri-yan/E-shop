@@ -1,6 +1,6 @@
 import './ProductList.css';
 import React from "react";
-import ProductTile from './ProductTile';
+import ProductTile from './ProductTile/ProductTile';
 
 const ProductList=({onRouteChange})=>{
     return(
